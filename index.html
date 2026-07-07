@@ -439,7 +439,7 @@ function mapsLink(q){ return "https://www.google.com/maps/search/?api=1&query=" 
   vê os próprios dados salvos no próprio navegador (sem sincronizar
   votos e checklist com o resto da família).
 */
-const FIREBASE_DB_URL = "COLE_AQUI_A_URL_DO_SEU_FIREBASE";
+const FIREBASE_DB_URL = "https://viagem-floripa-default-rtdb.firebaseio.com";
 const DB_READY = FIREBASE_DB_URL && FIREBASE_DB_URL.indexOf("https://") === 0;
 if(!DB_READY){
   console.warn("Firebase não configurado: os dados vão salvar só neste navegador, sem sincronizar com a família. Veja as instruções no topo do arquivo HTML.");
